@@ -21,6 +21,14 @@ for(const copyBtn of copyBtns){
     copyBtn.addEventListener('click',function(){
         countCopy++;
         copyCounter.innerText = countCopy;
+
+        const serviceNumber = copyBtn.parentElement.parentElement.children[3].innerText;
+
+        console.log(serviceNumber);
+
+        alert(`Number copied : ${serviceNumber}`);
+
+        navigator.clipboard.writeText(serviceNumber);
     })
 }
 
@@ -36,18 +44,20 @@ for(const callBtn of callBtns){
             availableCoins = availableCoins - 20;
             coinCounter.innerText = availableCoins;
 
-            const serviceName = callBtn.parentElement.parentElement.children[2].innerText;
+            const serviceName = callBtn.parentElement.parentElement.children[1].innerText;
             const serviceNumber = callBtn.parentElement.parentElement.children[3].innerText;
 
-            console.log(serviceName, serviceNumber);
+            // console.log(serviceName, serviceNumber);
 
-            alert(`Calling ${serviceName} - ${serviceNumber}...`);
+            alert(`Calling ${serviceName} ${serviceNumber}...`);
 
             const callHistory = document.querySelector('.call-history');
+            const callHistoryMobile = document.querySelector('.call-history-mobile');
             const div = document.createElement("div");
+            const divMobile = document.createElement('div');
 
             div.innerHTML = `
-                <div class="history-card bg-[#FAFAFA] p-4 flex flex-row items-center justify-between mt-3 rounded-lg">
+                    <div class="history-card bg-[#FAFAFA] p-4 flex flex-row items-center justify-between mt-3 rounded-lg">
                         <div>
                             <h1 class="text-xl font-bold">${serviceName}</h1>
                             <p>${serviceNumber}</p>
@@ -57,7 +67,21 @@ for(const callBtn of callBtns){
                         </div>
                     </div>
             `
+
+            divMobile.innerHTML = `
+                    <div class="history-card bg-[#FAFAFA] p-4 flex flex-row items-center justify-between mt-3 rounded-lg">
+                        <div>
+                            <h1 class="text-lg font-bold">${serviceName}</h1>
+                            <p>${serviceNumber}</p>
+                        </div>
+                        <div>
+                            <p>${new Date().toLocaleTimeString()}</p>
+                        </div>
+                    </div>
+            `
+
             callHistory.appendChild(div);
+            callHistoryMobile.appendChild(divMobile);
         }
         else{
             alert("Number of coins is not enough to make a call.");
@@ -67,12 +91,15 @@ for(const callBtn of callBtns){
 }
 
 //clear call history
-const clearCallHistry = document.getElementById("clear-call-history");
-const callHistory = document.querySelector('.call-history');
+const clearHistoryBtn = document.querySelectorAll('.clear-history-btn');
+const callHistory = document.querySelectorAll('.call-history');
 
-clearCallHistry.addEventListener('click',function(){
-    callHistory.innerHTML = '';
-})
+for(const clearBtn of clearHistoryBtn){
+    clearBtn.addEventListener("click",function(){
+        const historyCard = clearBtn.parentElement.parentElement.children[1];
+        historyCard.innerHTML = '';
+    })
+}
 
 
 
