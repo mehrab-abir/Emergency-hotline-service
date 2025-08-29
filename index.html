@@ -23,7 +23,7 @@
 
             <div class="heart-coin-copy flex flex-row justify-between items-center gap-4 mt-3 md:mt-0">
                 <div class="heart bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
-                    <span class="heartCounter mr-3 font-bold">0</span>
+                    <span class="heartCounter mr-3 font-bold text-xl">0</span>
                     <img src="assets/heart.png" alt="" class="w-[30px]">
                 </div>
                 <div class="coin bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
@@ -31,7 +31,7 @@
                     <img src="assets/coin.png" alt="" class="w-[30px]">
                 </div>
                 <div class="copy text-white font-bold bg-[#00A63E] py-3 px-7 flex items-center justify-center rounded-full">
-                    <span class="copyCounter mr-3">0</span>
+                    <span class="copyCounter mr-3 text-xl">0</span>
                     <span>Copy</span>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -99,15 +99,28 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
 
+            <!-- call history section  -->
             <div class="hidden md:block singleCard row-span-3 p-5 shadow-xl rounded-xl bg-white">
                 <div class="flex items-center justify-between">
                     <span class="text-[18px] font-bold"><i class="fa-regular fa-clock"></i> Call History</span>
                     <button class="bg-[#00A63E] px-8 py-3 text-white font-bold rounded-full cursor-pointer">Clear</button>
+                </div>
+
+                <div class="call-history">
+                    <div class="history-card bg-[#FAFAFA] p-4 flex flex-row items-center justify-between mt-3 rounded-lg">
+                        <div>
+                            <h1 class="text-xl font-bold">Name</h1>
+                            <p>hotline number</p>
+                        </div>
+                        <div>
+                            <p>Time</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -123,7 +136,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -140,7 +153,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -157,7 +170,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -174,7 +187,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -191,7 +204,7 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
@@ -208,11 +221,12 @@
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
-                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer hover:bg-[#dcdcdc]"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
                     <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
                 </div>
             </div>
 
+            <!-- call history section for mobile device  -->
             <div class="md:hidden singleCard row-span-3 p-5 shadow-xl rounded-xl bg-white">
                 <div class="flex items-center justify-between">
                     <span class="text-[18px] font-bold"><i class="fa-regular fa-clock"></i> Call History</span>
@@ -221,11 +235,8 @@
             </div>
             
         </div>
-
-        
-
-        
     </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
