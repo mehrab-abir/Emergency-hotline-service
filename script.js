@@ -24,3 +24,55 @@ for(const copyBtn of copyBtns){
     })
 }
 
+//call buttons
+let callBtns = document.querySelectorAll('.call');
+let coinCounter = document.querySelector('.coinCounter');
+
+let availableCoins = 100;
+
+for(const callBtn of callBtns){
+    callBtn.addEventListener('click',function(){
+        if(availableCoins >= 20){
+            availableCoins = availableCoins - 20;
+            coinCounter.innerText = availableCoins;
+
+            const serviceName = callBtn.parentElement.parentElement.children[2].innerText;
+            const serviceNumber = callBtn.parentElement.parentElement.children[3].innerText;
+
+            console.log(serviceName, serviceNumber);
+
+            alert(`Calling ${serviceName} - ${serviceNumber}...`);
+
+            const callHistory = document.querySelector('.call-history');
+            const div = document.createElement("div");
+
+            div.innerHTML = `
+                <div class="history-card bg-[#FAFAFA] p-4 flex flex-row items-center justify-between mt-3 rounded-lg">
+                        <div>
+                            <h1 class="text-xl font-bold">${serviceName}</h1>
+                            <p>${serviceNumber}</p>
+                        </div>
+                        <div>
+                            <p>${new Date().toLocaleTimeString()}</p>
+                        </div>
+                    </div>
+            `
+            callHistory.appendChild(div);
+        }
+        else{
+            alert("Number of coins is not enough to make a call.");
+            return;
+        }
+    })
+}
+
+//clear call history
+const clearCallHistry = document.getElementById("clear-call-history");
+const callHistory = document.querySelector('.call-history');
+
+clearCallHistry.addEventListener('click',function(){
+    callHistory.innerHTML = '';
+})
+
+
+

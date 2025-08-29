@@ -58,10 +58,10 @@
                     <i class="fa-regular fa-heart cursor-pointer text-xl text-[#5C5C5C]"></i>
                 </div>
                 
-                <h1 class="text-xl font-bold">Emergency Service Number</h1>
-                <p class="text-[#5C5C5C]">Emergency</p>
+                <h1 class="text-xl font-bold">Emergency Service</h1>
+                <p class="text-[#5C5C5C] service-name">Emergency</p>
 
-                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <h1 class="text-2xl font-bold mt-6 service-number">999</h1>
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
@@ -93,9 +93,9 @@
                     <i class="fa-regular fa-heart cursor-pointer text-xl text-[#5C5C5C]"></i>
                 </div>
                 <h1 class="text-xl font-bold">Emergency Police</h1>
-                <p class="text-[#5C5C5C]">Police</p>
+                <p class="text-[#5C5C5C] service-name">Police</p>
 
-                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <h1 class="text-2xl font-bold mt-6 hotline-number">999</h1>
                 <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
                 
                 <div class="flex items-center justify-between mt-4 gap-3">
@@ -108,7 +108,7 @@
             <div class="hidden md:block singleCard row-span-3 p-5 shadow-xl rounded-xl bg-white">
                 <div class="flex items-center justify-between">
                     <span class="text-[18px] font-bold"><i class="fa-regular fa-clock"></i> Call History</span>
-                    <button class="bg-[#00A63E] px-8 py-3 text-white font-bold rounded-full cursor-pointer">Clear</button>
+                    <button id="clear-call-history" class="bg-[#00A63E] px-8 py-3 text-white font-bold rounded-full cursor-pointer">Clear</button>
                 </div>
 
                 <div class="call-history">
@@ -121,6 +121,7 @@
                             <p>Time</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
