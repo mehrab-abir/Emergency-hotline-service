@@ -11,32 +11,186 @@
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-[#f5fff6]">
 
     <!-- header section -->
-    <header id="header" class="w-[95%] mx-auto flex justify-between items-center py-4">
-        <div class="logo flex items-center justify-between">
-            <img src="assets/logo.png" alt="" class="w-[70px]">     
-            <h1 class="text-2xl font-bold text-[#006747] ml-3">Emergency<br>Service</h1>
-        </div>
+    <header id="header" class=" py-4 bg-white">
+        <div class="w-[95%] mx-auto flex justify-between items-center">
+            <div class="logo flex items-center justify-between">
+                <img src="assets/logo.png" alt="" class="w-[70px]">     
+                <h1 class="text-2xl font-bold text-[#006747] ml-3">Emergency<br>Service</h1>
+            </div>
 
-        <div class="heart-coin-copy flex flex-row justify-between items-center gap-4">
-            <div class="heart bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
-                <span class="heartCounter mr-3 font-bold">0</span>
-                <img src="assets/heart.png" alt="" class="w-[30px]">
-            </div>
-            <div class="coin bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
-                <span class="coinCounter mr-3 font-bold">100</span>
-                <img src="assets/coin.png" alt="" class="w-[30px]">
-            </div>
-            <div class="copy text-white font-bold bg-[#00A63E] py-3 px-7 flex items-center justify-center rounded-full">
-                <span class="copyCounter mr-3">0</span>
-                <span>Copy</span>
+            <div class="heart-coin-copy flex flex-row justify-between items-center gap-4">
+                <div class="heart bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
+                    <span class="heartCounter mr-3 font-bold">0</span>
+                    <img src="assets/heart.png" alt="" class="w-[30px]">
+                </div>
+                <div class="coin bg-[#ECFFF0] py-3 px-7 flex items-center justify-center rounded-full">
+                    <span class="coinCounter mr-3 font-bold">100</span>
+                    <img src="assets/coin.png" alt="" class="w-[30px]">
+                </div>
+                <div class="copy text-white font-bold bg-[#00A63E] py-3 px-7 flex items-center justify-center rounded-full">
+                    <span class="copyCounter mr-3">0</span>
+                    <span>Copy</span>
+                </div>
             </div>
         </div>
+        
     </header>
 
-    
+    <!-- banner section -->
+    <section id="banner" class="bg-[linear-gradient(90deg,#013123,#006747_50%,#013223_100%)] py-8">
+        <div class="flex flex-col items-center justify-center">
+            <img src="assets/logo-dark.png" alt="" class="w-[70px]">
+            <h1 class="text-3xl font-bold text-[white]">Emergency Service Directory</h1>
+            <p class="text-white mt-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </section>
+
+     <!-- hotline cards section -->
+    <section id="hotlineCards" class="w-[95%] mx-auto bg-[#f5fff6]">
+
+        <div class="mt-8 grid grid-cols-4 grid-rows-3 gap-4 pb-12">
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard row-span-3 p-5 bg-white border">
+                <div class="flex items-center justify-between">
+                    <span class="text-[18px] font-bold"><i class="fa-regular fa-clock"></i> Call History</span>
+                    <button class="bg-[#00A63E] px-8 py-3 text-white rounded-full cursor-pointer">Clear</button>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+
+            <div class="singleCard border border-gray-500 p-5 w-[300px]">
+                <img src="assets/emergency.png" alt="" class="w-[30px] mb-2">
+                <h1 class="text-xl font-bold">Fire Service Number</h1>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+
+                <h1 class="text-2xl font-bold mt-6">999</h1>
+                <button class="bg-[#f2f2f2] py-1 px-4 rounded-full mt-1 text-[#5C5C5C]">Fire</button>
+                
+                <div class="flex items-center justify-between mt-4 gap-3">
+                    <span class="copyNumber w-full border border-gray-500 text-[gray] text-center rounded-lg py-1 cursor-pointer"><i class="fa-regular fa-copy mr-2"></i>Copy</span>
+                    <span class="call w-full bg-[#00A63E] text-white text-center rounded-lg py-1 cursor-pointer"><i class="fa-solid fa-phone mr-2"></i>Call</span>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        
+    </section>
     
 </body>
 </html>
