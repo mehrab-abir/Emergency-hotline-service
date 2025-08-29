@@ -47,8 +47,6 @@ for(const callBtn of callBtns){
             const serviceName = callBtn.parentElement.parentElement.children[1].innerText;
             const serviceNumber = callBtn.parentElement.parentElement.children[3].innerText;
 
-            // console.log(serviceName, serviceNumber);
-
             alert(`Calling ${serviceName} ${serviceNumber}...`);
 
             const callHistory = document.querySelector('.call-history');
